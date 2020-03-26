@@ -1,75 +1,112 @@
-
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-/* Nav menu */
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    font-family: 'Poppins', sans-serif;
-    background-color: #5e4854
-}
-
-.logo{
-    color: rgb(226, 226, 226);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 20px;
-}
-
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-}
-
-.nav-links li{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     list-style: none;
 }
 
-.nav-links a{
-    color: rgb(226, 226, 226);
-    text-decoration: none;
-    letter-spacing: 3px;
+
+body{
+    font-family: montserrat;
+}
+/*------------------------- navigation bar*/
+nav{
+    background-color: red;
+    height:80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
     font-weight: bold;
-    font-size: 14px;
-}
-/*Nav menu end*/
-
-img{
-    width: 250px;
-    height: 250px;
 }
 
-
-
-@media screen and (max-width:1024px){
-    .nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 60%
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
 
-@media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a.active,a:hover{
+    background-color: orange;
+    color: white;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none; 
+}
+
+
+@media (max-width: 952px){
+    /*------------------------- navigation bar*/
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
     }
-    .nav-links{
-        position:absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #5d4954;
-        width: 50%;
-       
+    nav ul li a{
+        font-size: 16px;
     }
-    
+}
+
+@media (max-width: 858px){
+    /*------------------------- navigation bar*/
+    .checkbtn{
+    display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: darkred;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        text-decoration: none;
+    }
+    a:hover,a.active{
+        background: none;
+        color: darkorange;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
