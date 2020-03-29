@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -14,8 +14,12 @@
     width: 100%;
     padding: 0;
     margin: 0;
+    top: 0;
 }
-
+.col-md-6{
+    padding:0;
+    margin:0;
+}
 /*-------------------------------------------------- colours*/
 .bg-color-heading{
     background-color: grey;
@@ -108,9 +112,24 @@ a:hover{
 /*-------------------------------------------------- header*/
 .heading{
     border: 2px solid red;
-    height: px;
+    height: 250px;
 }
-
+.name{
+    font-family: "Inter", sans-serif;
+    font-size: 29px;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 230px;
+}
+.name2{
+    font-family: "Inter", sans-serif;
+    font-size: 29px;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 0px;
+}
 
 @media (max-width: 952px){
     
