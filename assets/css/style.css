@@ -1,98 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
 }
-/* ----------------------------------------External css*/
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
 
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
-}
-/* ----------------------------------------External css end*/
-
-.bg-color-heading{
-    background-color: #C1C1C1;
-}
-.bg-color-pinfo{
-    background-color: #D2D2D2;
-}
-
-body{
-    font-family: montserrat;
-    background-color: #F1EDED;
-}
-.container-fluid{
-    padding: 0px;
-}
-
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
-}
-.row{
-    margin:0;
-}
-
-/* ----------------------------------------Special paddings/margins/text */
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.general-sub {
-    font-family: "montserrat", sans-serif;
-    font-weight: 300;
-    color: #fafafa;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.row-table {
-    display: table;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-}
-.personal-info-item{
-    padding-left: 35px
-}
-.history-heading,
-.section-heading {
-    font-family: "montserrat", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    padding-left: 15px;
-}
-
-
-
-/*------------------------- navigation bar*/
+/*-------------------------------------------------- navigation bar*/
 nav{
-    background-color: #5D5B5B;
+    background-color: #404040;
     height:80px;
     width: 100%;
 }
@@ -123,23 +40,24 @@ nav ul li a{
     padding: 7px 13px;
     text-transform: uppercase;
     border-radius: 3px;
+    font-family: "poppins", sans-serif;
 }
 a:link {
   text-decoration: none;
 }
 
-a.active{
-    background-color: #E78436;
+.active{
+    background-color: #a366ff;
     color: white;
     transition: .5s;
 }
-#nave:hover{
-    background-color: #E78436;
-    color: white;
-    transition: .5s;
+nav ul a:hover{
+    color: #fff;
+    background-color: #a366ff;
+    transition: 1.5s;
 }
 
-.checkbtn{
+.bars{
     font-size: 30px;
     color: white;
     float: right;
@@ -149,93 +67,12 @@ a.active{
     display: none;
 }
 
-#check{
+#bars{
     display: none; 
 }
 
-/*header*/
-.heading{
-    margin-left: 50px;
-    margin:auto;
-    padding: 25px;
-    
-}
-
-/*my image */
-.logoimage{
-    padding: 0px 20px;
-}
-#myimg{
-    height: 15vw;
-    width:  15vw;
-    border-radius: 50%;
-    padding:auto;
-    margin-top: 25px
-}
-/*personal info*/
-
-
-
-/*three reasons*/
-
-
-
-/*footer*/
-
-.footer {
-    background-color: #5D5B5B;
-    color: white;
-}
-
-.cv-pdf i {
-    font-size: 18px;
-    color: #fafafa;
-    text-align: center;
-    padding-left: 5px;
-    transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-    color: #e84610;
-}
-
-.social-links {
-    padding-bottom: 15px;
-}
-
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background: #504f4f;
-    transition: all 0.35s ease-in-out;
-}
-
-.social-links li a i:hover {
-    background: #e84610;
-}
-
-#footer-details {
-    padding: 25px;
-}
-
-
-@media(min-width: 992px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0 auto;
-        max-width: 50%;
-    }
-}
-
 @media (max-width: 952px){
-    /*------------------------- navigation bar*/
+    
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -246,8 +83,8 @@ a.active{
 }
 
 @media (max-width: 858px){
-    /*------------------------- navigation bar*/
-    .checkbtn{
+    /*-------------------------------------------------- navigation bar*/
+    .bars{
     display: block;
     }
     ul{
@@ -259,6 +96,7 @@ a.active{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 3;
     }
     nav{
         width: 100%;
@@ -274,9 +112,9 @@ a.active{
     }
     a:hover,a.active{
         background: none;
-        background-color: darkorange;
+        background-color: #a366ff;
     }
-    #check:checked ~ ul{
+    #bars:checked ~ ul{
         left: 0;
     }
 }
