@@ -6,19 +6,19 @@
     box-sizing: border-box;
     list-style: none;
 }
-.container-fluid{
-    padding: 0;
-    margin: 0;
-}
 .row{
     width: 100%;
     padding: 0;
     margin: 0;
     top: 0;
 }
-.col-md-6{
-    padding:0;
-    margin:0;
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
 }
 /*-------------------------------------------------- colours*/
 .bg-color-heading{
@@ -112,25 +112,67 @@ a:hover{
 /*-------------------------------------------------- header*/
 .heading{
     border: 2px solid red;
-    height: 250px;
+    height: 230px;
 }
 .name{
     font-family: "Inter", sans-serif;
-    font-size: 29px;
-    vertical-align: center;
-    display: flex;
-    justify-content: center;
-    line-height: 230px;
-}
-.name2{
-    font-family: "Inter", sans-serif;
-    font-size: 29px;
-    vertical-align: center;
-    display: flex;
-    justify-content: center;
-    line-height: 0px;
+    font-weight: 400;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
 }
 
+.title{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+}
+.img{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.myimage{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    
+}
+/*-------------------------------------------------- my info*/
+.aboutme{
+    border: 2px solid red;
+    background-color: grey;
+}
+.header{
+    margin-left: 36px;
+    margin-top: 5px;
+}
+
+.aboutme-item{
+    margin-left: 24px;
+}
+.key{
+    font-family: "poppins",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 7px 0;
+}
+.value{
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 3px;
+}
+/*-------------------------------------------------- three reasons*/
+.three-reasons{
+    border: 2px solid red;
+    background-color: grey;
+}
+/*-------------------------------------------------- media queries*/
 @media (max-width: 952px){
     
     label.logo{
@@ -143,7 +185,7 @@ a:hover{
 }
 
 @media (max-width: 858px){
-    /*-------------------------------------------------- navigation bar*/
+    /*--------------------------------------------------media navigation bar*/
     .bars{
     display: block;
     }
