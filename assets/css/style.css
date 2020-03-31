@@ -7,7 +7,7 @@
     list-style: none;
 }
 body{
-    background-color: #404040;
+    background-color: #e6e6e6;
 }
 .row{
     width: 100%;
@@ -30,15 +30,14 @@ p{
 
 /*-------------------------------------------------- navigation bar*/
 nav{
-    background-color: #303030;
     height:80px;
     width: 100%;
 }
 
 label.logo{
     margin:auto;
-    color: #e8e8e8;
-    font-size: 35px;
+    color: grey;
+    font-size: 45px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
@@ -56,30 +55,33 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #e8e8e8;
+    color: grey;
     font-size: 19px;
     padding: 7px 13px;
     text-transform: uppercase;
     border-radius: 3px;
     font-family: "poppins", sans-serif;
 }
-a:link {
+nav a:link {
   text-decoration: none;
 }
 
-a.active{
+nav a.active{
     transition: .5s;
-    color: #e8e8e8;
+    color: grey;
 }
 
 a:hover{
-    color: #e8e8e8;
+    color: grey;
+    text-shadow: 0px 0px 10px;
 }
 
 .hover{
     position: relative;
 }
-
+.active{
+    text-shadow: 0px 0px 10px;
+}
 .hover::before{
     content: '';
     position: absolute;
@@ -88,7 +90,7 @@ a:hover{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #e8e8e8;
+    background-color: grey;
     transform-origin: bottomright;
     transition: transform 0.25s ease-out;
 }
@@ -100,7 +102,7 @@ a:hover{
 
 .bars{
     font-size: 30px;
-    color: #e8e8e8;
+    color: grey;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -115,64 +117,54 @@ a:hover{
 /*-------------------------------------------------- header*/
 .heading{
     height: 230px;
+    margin: 15px 0;
 }
 .name{
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 46px;
+    font-weight: 500;
+    font-size: 66px;
     margin-top: 50px;
-    color: #e8e8e8;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .title{
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 15px;
-    color: #e8e8e8;
     text-align: center;
 }
 .img{
     justify-content: center;
     display: flex;
-    align-items: center;
 }
 .myimage{
-    height: 200px;
-    width: 200px;
+    height: 225px;
+    width: 225px;
     border-radius: 50%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
     
 }
-/*-------------------------------------------------- my info*/
-.header{
-    margin-left: 36px;
-    margin-top: 5px;
-    color: #e8e8e8;
+/*-------------------------------------------------- footer*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 10px 0; 
+}
+.footer{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer-icons{
+    padding: 0px 20px;
+    font-size: 25px;
+    color: grey;
 }
 
-.aboutme-item{
-    margin-left: 24px;
-}
-.key{
-    font-family: "poppins",sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    margin: 7px 0;
-    color: #e8e8e8;
-}
-.value{
-    font-family: "poppins",sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 3px;
-    color: #e8e8e8;
-}
-/*-------------------------------------------------- three reasons*/
-.three-reasons{
-    border: 2px solid red;
-    
-}
 /*-------------------------------------------------- media queries*/
 @media (max-width: 952px){
     
@@ -194,7 +186,7 @@ a:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #525252;
+        background: #d9d9d9;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -224,7 +216,7 @@ a:hover{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #e8e8e8;
+    background-color: grey;
     transition: transform 0.25s ease-out;
 }
 .hover:hover::before{
