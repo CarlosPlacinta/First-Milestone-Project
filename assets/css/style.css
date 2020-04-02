@@ -120,14 +120,14 @@ a:hover{
 
 /*-------------------------------------------------- header*/
 .heading{
-    height: 230px;
+    height: 215px;
     
 }
 .name{
     font-family: 'Baloo Thambi 2', cursive;
     font-weight: 600;
     font-size: 66px;
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
     letter-spacing: 5px;
     word-spacing: 5px;
@@ -154,7 +154,6 @@ a:hover{
 }
 /*-------------------------------------------------- footer*/
 footer{
-    position: absolute;
     bottom: 0;
     width: 100%;
     height: 5rem;
@@ -170,38 +169,60 @@ footer{
     font-size: 25px;
     color: #d9d9d9;
 }
-/*-------------------------------------------------- Section TimeLine*/
+/*-------------------------------------------------- Contact Form*/
+.contact-form{
+    padding-top: 100px;
+    text-align: center;
+    display: block;
+}
+.form-item{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.form-header {
+    text-align: center;
+    color: #d9d9d9;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  border: 0;
+  background: #595959;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #808080 ;
+}
 
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
 
 /*-------------------------------------------------- media queries*/
 @media (max-width: 952px){
@@ -224,7 +245,7 @@ ul.timeline > li:before {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #e6e6e6;
+        background: #666666;
         top: 80px;
         left: -100%;
         text-align: center;
