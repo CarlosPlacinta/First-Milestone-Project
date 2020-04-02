@@ -222,6 +222,10 @@ textarea.contact-form-text{
 .contact-form-btn:hover{
   background: #808080 ;
 }
+/*-------------------------------------------------- time line*/
+.timeline-item.h1{
+    color: red;
+}
 
 
 /*-------------------------------------------------- media queries*/
