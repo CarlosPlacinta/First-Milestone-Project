@@ -43,10 +43,12 @@ label.logo{
     padding: 0 100px;
     font-weight: bold;
 }
-
+ul{
+    margin-bottom: 0;
+}
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 35px;
 }
 
 nav ul li{
@@ -119,7 +121,7 @@ a:hover{
 /*-------------------------------------------------- header*/
 .heading{
     height: 230px;
-    margin: 15px 0;
+    
 }
 .name{
     font-family: 'Baloo Thambi 2', cursive;
@@ -141,10 +143,11 @@ a:hover{
 .img{
     justify-content: center;
     display: flex;
+    
 }
 .myimage{
-    height: 225px;
-    width: 225px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
     
@@ -166,6 +169,38 @@ footer{
     padding: 0px 20px;
     font-size: 25px;
     color: #d9d9d9;
+}
+/*-------------------------------------------------- Section TimeLine*/
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
 }
 
 /*-------------------------------------------------- media queries*/
