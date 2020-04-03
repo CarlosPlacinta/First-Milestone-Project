@@ -230,9 +230,9 @@ textarea.contact-form-text{
     padding: 3em 2em 2em;
     position: relative;
     color:  #d9d9d9;
-   border-left: 2px solid rgba(0, 0, 0, 0.3);
-   font-family: 'Baloo Thambi 2', cursive;
-}
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Baloo Thambi 2', cursive;
+} 
 .timeline-item p {
     font-size: 1rem;
 }
