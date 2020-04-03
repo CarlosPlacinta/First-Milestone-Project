@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    list-style: none;
 }
 body{
     background-color:  #404040;
@@ -131,6 +132,7 @@ a:hover{
     text-align: center;
     letter-spacing: 5px;
     word-spacing: 5px;
+    color: #d9d9d9;
 }
 
 .title{
@@ -139,6 +141,7 @@ a:hover{
     font-size: 26px;
     margin-top: 15px;
     text-align: center;
+    color: #d9d9d9;
 }
 .img{
     justify-content: center;
@@ -228,6 +231,7 @@ textarea.contact-form-text{
     position: relative;
     color:  #d9d9d9;
    border-left: 2px solid rgba(0, 0, 0, 0.3);
+   font-family: 'Baloo Thambi 2', cursive;
 }
 .timeline-item p {
     font-size: 1rem;
@@ -238,7 +242,7 @@ textarea.contact-form-text{
     left: 2em;
     top: 1em;
     display: block;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'Baloo Thambi 2', cursive;
     font-weight: 600;
     font-size: 0.785rem;
 }
@@ -254,14 +258,89 @@ textarea.contact-form-text{
     border: 2px solid rgba(0, 0, 0, 0.3);
     background: white;
 }
-.timeline-item:last-child {
-    -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
-    border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
-}
+
 /*--------------------------------------------------My-Skills*/
+.my-skills{
+    font-family: 'Baloo Thambi 2', cursive;
+    color: #d9d9d9;
+    margin-left: 50px;
+}
+.front-end,.back-end{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 600;
+    color: #d9d9d9;
+    display: inline-block;
+    padding: 10px 0;
+}
+.front-end{
+    margin: 20px 0;
+}
+.back-end{
+    margin-left: 40px;
+}
+/*--------------------------------------------------Progress-Bar*/
+.bar-progress{
+    font-family: 'Baloo Thambi 2', cursive;
+    width: 500px;
+    color:#d9d9d9;
+    margin-left: 50px;
+}
+.bar-progress li{
+    margin: 20px 0;
+}
+.bar{ 
+    background: #353b48;
+    display: block;
+    height: 4px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    
+    box-shadow: 0 0 10px  #737373;
 
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background: #9f9fdf;
 
+}
+.html5{
+    width: 70%;
+    animation: html5 3s;
+}
+.css3{
+    width: 60%;
+    animation: css3 3s;
+}
+.javascript{
+    width: 5%;
+    animation: javascript 3s;
+}
+/*--------------------------------------------------Key-Frames*/
+@keyframes javascript{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 5%;
+    }
+}
+@keyframes css3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes html5{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
 /*--------------------------------------------------Media-Queries*/
 @media (max-width: 952px){
     
@@ -275,9 +354,19 @@ textarea.contact-form-text{
 }
 
 @media (max-width: 858px){
+    .my-skills{
+        margin-left: 0;
+    }
+    .back-end{
+        margin-left: 0;
+    }
+    .bar-progress{
+        width: 350px;
+        margin-left: 0;
+    }
     /*--------------------------------------------------media navigation bar*/
     .bars{
-    display: block;
+        display: block;
     }
     ul{
         position: fixed;
@@ -303,23 +392,31 @@ textarea.contact-form-text{
         text-decoration: none;
     }
     .hover{
-    position: relative;
-}
-.hover::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #d9d9d9;
-    transition: transform 0.25s ease-out;
-}
-.hover:hover::before{
-    transform: scaleX(1);
-}
-    #bars:checked ~ ul{
-        left: 0;
+        position: relative;
     }
+    .hover::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #d9d9d9;
+        transition: transform 0.25s ease-out;
+    }
+    .hover:hover::before{
+        transform: scaleX(1);
+    }
+        #bars:checked ~ ul{
+            left: 0;
+        }
+}
+
+@media (max-width:400px){
+    /*--------------------------------------------------media my skills*/
+    .bar-progress{
+    width: 250px;
+    }
+
 }
