@@ -17,12 +17,13 @@ For this project i used :
     * The project uses bootstrap for responsivness.
 * W3Schools [https://www.w3schools.com/]
     * W3schools was used as help for creating diferent parts of the site.
+    
 # Testing
 Everything was tested and verified, everything works as its supose to.
 
 # Deployment
 
-
+This project was deplyed with github pages[https://carlosplacinta.github.io/First-Milestone-Project/].
 This project was done entirely on gitpod.
 
 # Credits
