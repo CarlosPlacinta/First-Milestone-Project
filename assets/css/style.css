@@ -67,7 +67,7 @@ nav ul li a{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
 }
-nav a:link {
+nav a:hover {
   text-decoration: none;
 }
 

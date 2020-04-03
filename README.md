@@ -27,4 +27,5 @@ This project was done entirely on gitpod.
 
 # Credits
 
+The code used for the timeline in resume section was taken from here [https://freefrontend.com/css-timelines/]
 I received inspiration for this project from this video [https://www.youtube.com/watch?v=ZZOlqX_772k&t=140s]
